@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 const Restaurants = ({restaurants}) => {
   const restaurantList = restaurants.map(restaurant => {
     return (
-      <div className='mb-4'>
+      <div key={restaurant.id} className='mb-4'>
         <img src={restaurant.img.src} alt={restaurant.img.name} className='img-fliud rounded w-100'/>
         <h6 className='display-6 fw-normal py-2'>{restaurant.name}</h6>
         <p>{restaurant.cuisine} | Rating: {restaurant.rating}</p>
@@ -25,6 +25,7 @@ export default function App() {
 
   const restaurants = [
     {
+      id: 1,
       name: "Taste of Italy",
       cuisine: "Italian",
       img: {
@@ -35,6 +36,7 @@ export default function App() {
       location: "123 Main Street, Anytown, USA"
     },
     {
+      id: 2,
       name: "Spice Village",
       cuisine: "Indian",
       img: {
