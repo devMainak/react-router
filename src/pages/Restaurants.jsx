@@ -1,4 +1,5 @@
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 // generating & displaying restaurants cards
 const RestaurantCards = ({restaurants}) => {
   return (
@@ -53,6 +54,7 @@ export default function Restaurants(){
       <h2 className="display-2 fw-normal">Restaurants</h2>
       <RestaurantCards restaurants={restaurants}/>
     </main>
+      <Footer/>
       </>
   )
 }

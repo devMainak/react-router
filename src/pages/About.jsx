@@ -1,4 +1,5 @@
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 export default function About(){
   return (
     <>
@@ -9,6 +10,7 @@ export default function About(){
       <p className="fs-5 fw-normal">Our team of food enthusiats, chefs, and reviewrs collaborates to cruate a diverse collection of restaurant recommendations, highlighting the richness of global cuisines and the creativity of chefs.</p>
       <p className="fs-5 fw-normal">Join us as we embark on a gastronomic journey, discovering hidden gems, iconic eateries, and innovative culinary trends. Whether you're seasoned foodie or an adventurous diner, we invite you to explore, indulge, and savor the flavors of the world with us. Thank you for being part of our culinary community!</p>
     </main>
+      <Footer/>
     </>
   )
 }

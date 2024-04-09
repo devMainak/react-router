@@ -1,6 +1,7 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 const Restaurants = ({restaurants}) => {
   const restaurantList = restaurants.map(restaurant => {
@@ -56,6 +57,7 @@ export default function App() {
       <h2 className='display-2 fw-normal'>Featured Restaurants</h2>
       <Restaurants restaurants={restaurants}/>
     </main>
+      <Footer/>
     </>
   )
 }
