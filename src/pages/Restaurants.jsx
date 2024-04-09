@@ -1,3 +1,4 @@
+import Header from '../components/Header'
 // generating & displaying restaurants cards
 const RestaurantCards = ({restaurants}) => {
   return (
@@ -46,9 +47,12 @@ export default function Restaurants(){
   ]
   
   return (
+    <>
+    <Header/>
     <main className="container py-4">
       <h2 className="display-2 fw-normal">Restaurants</h2>
       <RestaurantCards restaurants={restaurants}/>
     </main>
+      </>
   )
 }
